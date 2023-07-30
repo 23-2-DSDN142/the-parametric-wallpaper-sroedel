@@ -53,15 +53,41 @@ vertex(bottomrx,bottomry)
 
 endShape();
 
+let TopOfDiamond = 0;
 
-
+//Blue Diamond
 beginShape();
-fill(163, 219, 255);
-vertex(100,0);
+fill(163, 219, 255);//light blue
+vertex(100,TopOfDiamond);
 vertex(200, 100);
 vertex(100, 200);
 vertex(0,100);
 endShape(CLOSE);
 
+//Purple Diamond Left
+beginShape();
+fill(219, 162, 255);//light purple
+vertex(0,100);
+vertex(50,50);
+vertex(intersect, intersect);
+vertex(50,150);
+endShape(CLOSE);
+
+//Purple Diamond Right
+beginShape();
+fill(219, 162, 255);//light purple
+vertex(150,50);
+vertex(200,100);
+vertex(150,150);
+vertex(intersect, intersect);
+endShape(CLOSE);
+
+beginShape();
+noFill();
+vertex(toplx,toply);
+vertex(toprx,topry);
+vertex(bottomrx, bottomry);
+vertex(bottomlx,bottomly);
+endShape(CLOSE);
 
 }
