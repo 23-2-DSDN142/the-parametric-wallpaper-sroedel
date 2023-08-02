@@ -1,6 +1,4 @@
 //your parameter variables go here!
-let rect_width  = 20;
-let rect_height = 20;
 let intersect  =100;
 let toplx=0;
 let toply =0;
@@ -28,6 +26,7 @@ function wallpaper_background() {
 
 function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
 
+noStroke()
 //Top
 fill (127, 162, 255)//darker blue
 beginShape(TRIANGLES);
@@ -82,12 +81,62 @@ vertex(150,150);
 vertex(intersect, intersect);
 endShape(CLOSE);
 
-beginShape();
-noFill();
-vertex(toplx,toply);
-vertex(toprx,topry);
-vertex(bottomrx, bottomry);
-vertex(bottomlx,bottomly);
-endShape(CLOSE);
 
+//line
+strokeWeight (1);
+stroke("black");
+line(0,0,200,200);
+
+strokeWeight (1);
+stroke("black");
+line(0,200,200,0);
+
+strokeWeight (4);
+stroke("black");
+line(0,0,0,200);
+
+
+strokeWeight (4);
+stroke("black");
+line(0,0,200,0);
+
+strokeWeight (4);
+stroke("black");
+line(200,0,200,200);
+
+strokeWeight (3);
+stroke("black");
+line(200,200,0,200);
+
+strokeWeight (3);
+stroke("black");
+line(0,100,100,0);
+
+strokeWeight (3);
+stroke("black");
+line(100,0,200,100);
+
+strokeWeight (3);
+stroke("black");
+line(200,100,100,200);
+
+strokeWeight (3);
+stroke("black");
+line(100,200,0,100);
+
+strokeWeight (2);
+stroke("black");
+line(intersect,intersect,150,50);
+
+strokeWeight (2);
+stroke("black");
+line(intersect,intersect,150,150);
+
+strokeWeight (2);
+stroke("black");
+line(intersect,intersect,50,150);
+
+strokeWeight (2);
+stroke("black");
+line(intersect,intersect,50,50);
 }
