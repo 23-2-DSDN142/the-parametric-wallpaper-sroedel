@@ -1,13 +1,14 @@
 //your parameter variables go here!
-let intersect  =100;
-let toplx=0;
-let toply =0;
-let toprx = 200;
-let topry = 0;
-let bottomlx = 0;
-let bottomly= 200;
-let bottomrx= 200;
-let bottomry= 200;
+
+
+
+var Bigrect= 25
+var Smallsquare =15
+var Bigcircle =30
+var Smallcircle = 15
+var rectlong = 30
+var rectshort = 5
+
 
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(DEVELOP_GLYPH);
@@ -21,122 +22,102 @@ function setup_wallpaper(pWallpaper) {
 }
 
 function wallpaper_background() {
-  background(240, 255, 240); //light honeydew green colour
+  background("white"); 
+
+if (true)
+{
+  background("black"); 
+}
+else{
+  background("white"); 
+}
 }
 
 function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
+//Variables
+  var yellow = color(255, 242, 145);
+  var orange = color(255, 180, 115);
+  var pink = color (255, 135, 170);
+  var blue = color(104, 186, 200);
 
-noStroke()
-//Top
-fill (127, 162, 255)//darker blue
-beginShape(TRIANGLES);
-vertex(0, 0);
-vertex(200, 0);
-vertex(intersect, intersect);
-//Bottom 
-vertex(intersect, intersect);
-vertex(0, 200);
-vertex(200, 200);
+  //Squares
 
-//left
-fill (181, 126, 255)// dark purple
-vertex(intersect, intersect);
-vertex (toplx,toply);
-vertex (bottomlx,bottomly);
+  fill(orange); //orange
+  rect (1,1,Bigrect);
+
+  fill(blue);
+  rect(80,50,Bigrect*.6);
+
+  fill(yellow);
+  rect (5,115,Bigrect*.8);
+
+  fill(yellow);
+  rect (175,110,Smallsquare*.8);
+
+  fill(pink);
+  rect (140,125,Smallsquare*1.1);
+
+  //circles
+  fill(yellow);
+  circle(60,20, Bigcircle);
+
+  fill(orange); 
+  circle(110,25,Smallcircle)
+
+  fill(pink);
+  circle(180,50,Bigcircle*.9);
+
+  fill(yellow);
+  circle (70,100,Smallcircle);
+
+  fill(pink);
+  circle(105,155,Bigcircle*.8);
+
+  fill(blue);
+  circle(25,175,Bigcircle*.95);
+
+//Triangle
+  fill(pink)
+  triangle(145,5,145,25,160,15); 
+
+  fill(yellow);
+  triangle (140,45,125,70, 155,70)
+
+  fill(orange);
+  triangle(95,105,120,120,120,90,);
+
+  fill(blue);
+  triangle(180,145,170,160,190,160);
+
+  fill(orange)
+  triangle(75,190,65,175,85,175); 
+
+  fill(blue);
+  triangle(20,80,5,70,5,90);
+
+//Rectangle
+  fill(pink)
+  rect (15, 45, rectlong, rectshort);
+
+  fill(orange);
+  rect(35,70,rectshort,rectlong);
+
+  fill(blue);
+  rect(145,90,rectlong, rectshort);
+
+  fill(blue);
+  rect(45,135,rectlong, rectshort);
+
+  fill(yellow);
+  rect(135,160,rectshort, rectlong);
+
+  fill(orange); 
+  circle(175,185,Smallcircle)
 
 
-//right
-vertex(intersect, intersect);
-vertex (toprx,topry);
-vertex(bottomrx,bottomry)
-
-endShape();
-
-let TopOfDiamond = 0;
-
-//Blue Diamond
-beginShape();
-fill(163, 219, 255);//light blue
-vertex(100,TopOfDiamond);
-vertex(200, 100);
-vertex(100, 200);
-vertex(0,100);
-endShape(CLOSE);
-
-//Purple Diamond Left
-beginShape();
-fill(219, 162, 255);//light purple
-vertex(0,100);
-vertex(50,50);
-vertex(intersect, intersect);
-vertex(50,150);
-endShape(CLOSE);
-
-//Purple Diamond Right
-beginShape();
-fill(219, 162, 255);//light purple
-vertex(150,50);
-vertex(200,100);
-vertex(150,150);
-vertex(intersect, intersect);
-endShape(CLOSE);
 
 
-//line
-strokeWeight (1);
-stroke("black");
-line(0,0,200,200);
-
-strokeWeight (1);
-stroke("black");
-line(0,200,200,0);
-
-strokeWeight (4);
-stroke("black");
-line(0,0,0,200);
 
 
-strokeWeight (4);
-stroke("black");
-line(0,0,200,0);
-
-strokeWeight (4);
-stroke("black");
-line(200,0,200,200);
-
-strokeWeight (3);
-stroke("black");
-line(200,200,0,200);
-
-strokeWeight (3);
-stroke("black");
-line(0,100,100,0);
-
-strokeWeight (3);
-stroke("black");
-line(100,0,200,100);
-
-strokeWeight (3);
-stroke("black");
-line(200,100,100,200);
-
-strokeWeight (3);
-stroke("black");
-line(100,200,0,100);
-
-strokeWeight (2);
-stroke("black");
-line(intersect,intersect,150,50);
-
-strokeWeight (2);
-stroke("black");
-line(intersect,intersect,150,150);
-
-strokeWeight (2);
-stroke("black");
-line(intersect,intersect,50,150);
-
-strokeWeight (2);
-stroke("black");
-line(intersect,intersect,50,50);
+  
 }
