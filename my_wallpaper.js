@@ -30,9 +30,9 @@
   {var Bigcircle =Smallcircle}
 
 function setup_wallpaper(pWallpaper) {
-  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.output_mode(DEVELOP_GLYPH);
   pWallpaper.resolution(FIT_TO_SCREEN);
-  pWallpaper.show_guide(false); //set this to false when you're ready to print
+  pWallpaper.show_guide(true); //set this to false when you're ready to print
 
   //Grid settings
   pWallpaper.grid_settings.cell_width  = 200;
@@ -97,10 +97,10 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   rect (140,125,Smallsquare*1.1);
 
 //Circles
-
+var Xmove = 20
   //Big & Top Left
   fill(yellow);
-  circle(60,20, Bigcircle);
+  circle(60+Xmove,20, Bigcircle);
 
   //Top Left
   fill(orange); 
