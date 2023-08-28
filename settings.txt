@@ -1,53 +1,688 @@
-You will need to fill out this file for hand in. 
-The bellow is just an example, feel free to disregard this documents contents.
-
-
-Your final settings.txt will look something like this when you are finished:
-
 /////////////////////////////////
-
 Wallpaper 1:
 
 //your parameter variables go here!
-let rect_width  = 20;
-let rect_height = 20;
-let paramter1 = 10;
-let paramter2 = true;
-let paramter3 = 50; 
-let paramter4 = 0; 
-let paramter5 = 60;
+
+//Size Variables
+  var Bigrect= 25
+  var Smallsquare =15
+  var Bigcircle =30
+  var Smallcircle = 15
+  var rectlong = 30
+  var rectshort = 5
+
+// If statments for size
+  if(true)
+  {var Bigsquare= 25}
+  else
+  {var Bigsquare= Smallsquare}  
+
+  if (true)
+  {var rectlong = 30}
+  else
+  {var rectlong = 30*2}
+
+  if (true)
+  {var rectshort = 5}
+  else
+  {var rectshort = 5*2}
+
+  if (true)
+  {var Bigcircle =30}
+  else
+  {var Bigcircle =Smallcircle}
 
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(GRID_WALLPAPER);
-  pWallpaper.resolution(NINE_LANDSCAPE);
+  pWallpaper.resolution(FIT_TO_SCREEN);
   pWallpaper.show_guide(false); //set this to false when you're ready to print
 
   //Grid settings
-  pWallpaper.grid_settings.cell_width  = 100;
-  pWallpaper.grid_settings.cell_height = 100;
-  pWallpaper.grid_settings.row_offset  = 50;
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 100;
 }
+
+//Background
+  function wallpaper_background() {
+  if (true)
+  {background("white"); }
+  else
+  {background("black");}
+  }
+
+
+//If statments colors (This only worked when done within the drawing section)
+  if (true)
+  {var orange = color(255, 180, 115);}
+  else
+  {var orange = color(206, 212, 218);}
+
+  if(true)
+  {var yellow = color(255, 242, 145);}
+  else
+  {var yellow =color(108, 117, 125); }
+
+  if(true)
+  {var pink = color (255, 135, 170);}
+  else
+  {var pink =color (173, 181, 189);}
+
+  if(true)
+  {var blue = color(104, 186, 200); }
+  else
+  { var blue = color(33, 37, 41);}
 
 /////////////////////////////////
 
 Wallpaper 2:
 
 //your parameter variables go here!
-let rect_width  = 10;
-let rect_height = 10;
-let paramter1 = 20;
-let paramter2 = false;
-let paramter3 = 50; 
-let paramter4 = 80; 
-let paramter5 = 30;
+
+//Size Variables
+  var Bigrect= 25
+  var Smallsquare =15
+  var Bigcircle =30
+  var Smallcircle = 15
+  var rectlong = 30
+  var rectshort = 5
+
+// If statments for size
+  if(true)
+  {var Bigsquare= 25}
+  else
+  {var Bigsquare= Smallsquare}  
+
+  if (true)
+  {var rectlong = 30}
+  else
+  {var rectlong = 30*2}
+
+  if (true)
+  {var rectshort = 5}
+  else
+  {var rectshort = 5*2}
+
+  if (true)
+  {var Bigcircle =30}
+  else
+  {var Bigcircle =Smallcircle}
 
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(GRID_WALLPAPER);
-  pWallpaper.resolution(NINE_LANDSCAPE);
+  pWallpaper.resolution(FIT_TO_SCREEN);
   pWallpaper.show_guide(false); //set this to false when you're ready to print
 
   //Grid settings
-  pWallpaper.grid_settings.cell_width  = 100;
-  pWallpaper.grid_settings.cell_height = 100;
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 100;
+}
+
+function wallpaper_background() {
+  if (false)
+  {background("white"); }
+  else
+  {background("black");}
+  }
+
+
+//If statments colors (This only worked when done within the drawing section)
+  if (true)
+  {var orange = color(255, 180, 115);}
+  else
+  {var orange = color(206, 212, 218);}
+
+  if(true)
+  {var yellow = color(255, 242, 145);}
+  else
+  {var yellow =color(108, 117, 125); }
+
+  if(true)
+  {var pink = color (255, 135, 170);}
+  else
+  {var pink =color (173, 181, 189);}
+
+  if(true)
+  {var blue = color(104, 186, 200); }
+  else
+  { var blue = color(33, 37, 41);}
+
+/////////////////////////////////
+Wallpaper 3
+
+//your parameter variables go here!
+
+//Size Variables
+  var Bigrect= 25
+  var Smallsquare =15
+  var Bigcircle =30
+  var Smallcircle = 15
+  var rectlong = 30
+  var rectshort = 5
+
+// If statments for size
+  if(true)
+  {var Bigsquare= 25}
+  else
+  {var Bigsquare= Smallsquare}  
+
+  if (true)
+  {var rectlong = 30}
+  else
+  {var rectlong = 30*2}
+
+  if (true)
+  {var rectshort = 5}
+  else
+  {var rectshort = 5*2}
+
+  if (true)
+  {var Bigcircle =30}
+  else
+  {var Bigcircle =Smallcircle}
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.resolution(FIT_TO_SCREEN);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 100;
+}
+
+//background
+  function wallpaper_background() {
+  if (true)
+  {background("white"); }
+  else
+  {background("black");}
+  }
+
+
+function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
+
+
+//If statments colors
+  if (false)
+  {var orange = color(255, 180, 115);}
+  else
+  {var orange = color(6, 214, 160);}
+
+  if(false)
+  {var yellow = color(255, 242, 145);}
+  else
+  {var yellow =color(255, 209, 102); }
+
+  if(false)
+  {var pink = color (255, 135, 170);}
+  else
+  {var pink =color (239, 71, 111);}
+
+  if(false)
+  {var blue = color(104, 186, 200); }
+  else
+  { var blue = color(17, 138, 178);}
+
+/////////////////////////////////
+Wallpaper 4
+//your parameter variables go here!
+
+//Size Variables
+  var Bigsquare= 25
+  var Smallsquare =15
+  var Bigcircle =30
+  var Smallcircle = 15
+  var rectlong = 30
+  var rectshort = 5
+
+// If statments for size
+  if(true)
+  {var Bigsquare= 25*1.6}
+  else
+  {var Bigsquare= Smallsquare}  
+
+  if (false)
+  {var rectlong = 30}
+  else
+  {var rectlong = 30*2}
+
+  if (false)
+  {var rectshort = 5}
+  else
+  {var rectshort = 5*2}
+
+  if (false)
+  {var Bigcircle =30}
+  else
+  {var Bigcircle =Smallcircle}
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.resolution(FIT_TO_SCREEN);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 30;
+}
+
+//background
+  function wallpaper_background() {
+  if (true)
+  {background("white"); }
+  else
+  {background("black");}
+  }
+
+
+function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
+
+
+//If statments colors
+  if (true)
+  {var orange = color(255, 180, 115);}
+  else
+  {var orange = color(206, 212, 218);}
+
+  if(true)
+  {var yellow = color(255, 242, 145);}
+  else
+  {var yellow =color(108, 117, 125); }
+
+  if(true)
+  {var pink = color (255, 135, 170);}
+  else
+  {var pink =color (173, 181, 189);}
+
+  if(true)
+  {var blue = color(104, 186, 200); }
+  else
+  { var blue = color(33, 37, 41);}
+
+/////////////////////////////////
+Wallpaper 5
+
+//your parameter variables go here!
+
+//Size Variables
+  var Big= 25
+  var Smallsquare =15
+  var Bigcircle =30
+  var Smallcircle = 15
+  var rectlong = 30
+  var rectshort = 5
+
+// If statments for size
+  if(true)
+  {var Bigsquare= 25}
+  else
+  {var Bigsquare= Smallsquare}  
+
+  if (true)
+  {var rectlong = 30}
+  else
+  {var rectlong = 30*2}
+
+  if (true)
+  {var rectshort = 5}
+  else
+  {var rectshort = 5*2}
+
+  if (true)
+  {var Bigcircle =30}
+  else
+  {var Bigcircle =Smallcircle}
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.resolution(FIT_TO_SCREEN);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 100;
+}
+
+//background
+  function wallpaper_background() {
+  if (true)
+  {background("white"); }
+  else
+  {background("black");}
+  }
+
+
+function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
+
+
+//If statments colors
+  if (true)
+  {var orange = color(255, 180, 115);}
+  else
+  {var orange = color(206, 212, 218);}
+
+  if(false)
+  {var yellow = color(255, 242, 145);}
+  else
+  {var yellow =color("white"); }
+
+  if(true)
+  {var pink = color (255, 135, 170);}
+  else
+  {var pink =color (173, 181, 189);}
+
+  if(true)
+  {var blue = color(104, 186, 200); }
+  else
+  { var blue = color(33, 37, 41);}
+
+/////////////////////////////////
+Wallpaper 6
+
+
+//Size Variables
+  var Bigrect= 25
+  var Smallsquare =15
+  var Bigcircle =30
+  var Smallcircle = 15
+  var rectlong = 30
+  var rectshort = 5
+
+// If statments for size
+  if(false)
+  {var Bigsquare= 25}
+  else
+  {var Bigsquare= Smallsquare}  
+
+  if (true)
+  {var rectlong = 30}
+  else
+  {var rectlong = 30*2}
+
+  if (true)
+  {var rectshort = 5}
+  else
+  {var rectshort = 5*2}
+
+  if (false)
+  {var Bigcircle =30}
+  else
+  {var Bigcircle =Smallcircle}
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.resolution(FIT_TO_SCREEN);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 100;
+}
+
+//background
+  function wallpaper_background() {
+  if (true)
+  {background("white"); }
+  else
+  {background("black");}
+  }
+
+
+function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
+
+
+//If statments colors
+  if (true)
+  {var orange = color(255, 180, 115);}
+  else
+  {var orange = color(206, 212, 218);}
+
+  if(true)
+  {var yellow = color(255, 242, 145);}
+  else
+  {var yellow =color(108, 117, 125); }
+
+  if(true)
+  {var pink = color (255, 135, 170);}
+  else
+  {var pink =color (173, 181, 189);}
+
+  if(true)
+  {var blue = color(104, 186, 200); }
+  else
+  { var blue = color(33, 37, 41);}
+
+/////////////////////////////////
+Wallpaper 7
+//Size Variables
+  var Bigrect= 25
+  var Smallsquare =15
+  var Bigcircle =30
+  var Smallcircle = 15
+  var rectlong = 30
+  var rectshort = 5
+
+// If statments for size
+  if(true)
+  {var Bigsquare= 25}
+  else
+  {var Bigsquare= Smallsquare}  
+
+  if (true)
+  {var rectlong = 30}
+  else
+  {var rectlong = 30*2}
+
+  if (true)
+  {var rectshort = 5}
+  else
+  {var rectshort = 5*2}
+
+  if (true)
+  {var Bigcircle =30}
+  else
+  {var Bigcircle =Smallcircle}
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GLIDE_WALLPAPER);
+  pWallpaper.resolution(FIT_TO_SCREEN);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
   pWallpaper.grid_settings.row_offset  = 0;
 }
+
+  //background
+  function wallpaper_background() {
+  if (true)
+  {background("white"); }
+  else
+  {background("black");}
+  }
+
+
+function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
+
+
+//If statments colors
+  if (true)
+  {var orange = color(255, 180, 115);}
+  else
+  {var orange = color(206, 212, 218);}
+
+  if(true)
+  {var yellow = color(255, 242, 145);}
+  else
+  {var yellow =color(108, 117, 125); }
+
+  if(true)
+  {var pink = color (255, 135, 170);}
+  else
+  {var pink =color (173, 181, 189);}
+
+  if(true)
+  {var blue = color(104, 186, 200); }
+  else
+  { var blue = color(33, 37, 41);}
+
+/////////////////////////////////
+Wallpaper 8
+//Size Variables
+  var Bigrect= 25
+  var Smallsquare =15
+  var Bigcircle =30
+  var Smallcircle = 15
+  var rectlong = 30
+  var rectshort = 5
+
+// If statments for size
+  if(true)
+  {var Bigsquare= 25}
+  else
+  {var Bigsquare= Smallsquare}  
+
+  if (true)
+  {var rectlong = 30}
+  else
+  {var rectlong = 30*2}
+
+  if (true)
+  {var rectshort = 5}
+  else
+  {var rectshort = 5*2}
+
+  if (true)
+  {var Bigcircle =30}
+  else
+  {var Bigcircle =Smallcircle}
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.resolution(FIT_TO_SCREEN);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 50;
+}
+
+  //background
+  function wallpaper_background() {
+  if (true)
+  {background("white"); }
+  else
+  {background("black");}
+  }
+
+
+function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
+
+
+//If statments colors
+  if (false)
+  {var orange = color(255, 180, 115);}
+  else
+  {var orange = color("black");}
+
+  if(false)
+  {var yellow = color(255, 242, 145);}
+  else
+  {var yellow =color("white"); }
+
+  if(false)
+  {var pink = color (255, 135, 170);}
+  else
+  {var pink =color (173, 181, 189);}
+
+  if(false)
+  {var blue = color(104, 186, 200); }
+  else
+  { var blue = color(17, 138, 178);}
+
+
+
+/////////////////////////////////
+Wallpaper 9
+//your parameter variables go here!
+
+//Size Variables
+  var Bigrect= 25
+  var Smallsquare =15
+  var Bigcircle =30
+  var Smallcircle = 15
+  var rectlong = 30
+  var rectshort = 5
+
+// If statments for size
+  if(true)
+  {var Bigsquare= 25}
+  else
+  {var Bigsquare= Smallsquare}  
+
+  if (true)
+  {var rectlong = 30}
+  else
+  {var rectlong = 30*2}
+
+  if (true)
+  {var rectshort = 5}
+  else
+  {var rectshort = 5*2}
+
+  if (true)
+  {var Bigcircle =30}
+  else
+  {var Bigcircle =Smallcircle}
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.resolution(FIT_TO_SCREEN);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 100;
+}
+
+//background
+  function wallpaper_background() {
+  if (false)
+  {background("white"); }
+  else
+  {background(173, 181, 189);}
+  }
+
+
+function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
+
+
+//If statments colors
+  if (false)
+  {var orange = color(255, 180, 115);}
+  else
+  {var orange = color(206, 212, 218);}
+
+  if(false)
+  {var yellow = color(255, 242, 145);}
+  else
+  {var yellow =color(108, 117, 125); }
+
+  if(false)
+  {var pink = color (255, 135, 170);}
+  else
+  {var pink =color (173, 181, 189);}
+
+  if(false)
+  {var blue = color(104, 186, 200); }
+  else
+  { var blue = color(33, 37, 41);}
